@@ -5,14 +5,9 @@ interface DropDownnType {
   callback?: () => void;
 }
 const PersonInfo: FC<DropDownnType> = (props) => {
-  const { person, callback } = props;
-  const [isDropDowned, setIsDropDowned] = useState<boolean>(false);
-  const title1 = "View Filters For";
+  const { person } = props;
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
-  const handleDropDown = () => {
-    setIsDropDowned(!isDropDowned);
-  };
   return (
     <div className="border-[1px] border-solid border-[#EDEDED] rounded-[8px] mb-2 bg-white">
       <div className="flex flex-wrap w-full pt-[16px] pb-[16px] pl-[20px] pr-[20px] ">

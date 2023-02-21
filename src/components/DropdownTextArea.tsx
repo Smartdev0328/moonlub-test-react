@@ -5,7 +5,7 @@ interface DropdownTextAreaType {
   callback: () => void;
 }
 const DropdownTextArea: FC<DropdownTextAreaType> = (props) => {
-  const { title, placeHolder, callback } = props;
+  const { title, placeHolder } = props;
   const [isDropDowned, setIsDropDowned] = useState<boolean>(false);
   const handleDropDown = () => {
     setIsDropDowned(!isDropDowned);
@@ -26,7 +26,7 @@ const DropdownTextArea: FC<DropdownTextAreaType> = (props) => {
       {!isDropDowned && (
         <div className="pt-3 pb-3">
           <textarea
-            className="w-full p-[12px] h-[80px] resize-none rounded-md text-[14px] border-[1px] border-solid border-[#EDEDED]"
+            className="w-full p-[12px] h-[80px] bg-gray-50 resize-none rounded-md text-[14px] border-[1px] border-solid border-[#EDEDED]"
             placeholder={placeHolder}
           ></textarea>
         </div>

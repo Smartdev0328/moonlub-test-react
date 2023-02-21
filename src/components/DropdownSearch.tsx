@@ -5,7 +5,7 @@ interface DropdownSearchType {
   callback: () => void;
 }
 const DropdownSearch: FC<DropdownSearchType> = (props) => {
-  const { title, placeHolder, callback } = props;
+  const { title } = props;
   const [isDropDowned, setIsDropDowned] = useState<boolean>(false);
   const handleDropDown = () => {
     setIsDropDowned(!isDropDowned);
@@ -30,7 +30,7 @@ const DropdownSearch: FC<DropdownSearchType> = (props) => {
               <input
                 type="search"
                 id="search-dropdown"
-                className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg rounded-l-lg rounded border-[1px] border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                className="block p-2.5 w-full z-20 bg-gray-50 text-sm text-gray-900 bg-gray-50 rounded-r-lg rounded-l-lg rounded border-[1px] border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
                 placeholder="Search Mockups, Logos, Design Templates..."
                 required
               />

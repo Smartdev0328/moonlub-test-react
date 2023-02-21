@@ -5,7 +5,7 @@ interface DropdownNormalSearchType {
   callback: () => void;
 }
 const DropdownNormalSearch: FC<DropdownNormalSearchType> = (props) => {
-  const { title, placeHolder, callback } = props;
+  const { title } = props;
   const [isDropDowned, setIsDropDowned] = useState<boolean>(false);
   const handleDropDown = () => {
     setIsDropDowned(!isDropDowned);
@@ -28,7 +28,7 @@ const DropdownNormalSearch: FC<DropdownNormalSearchType> = (props) => {
           <div className="relative w-full">
             <input
               type="search"
-              className="relative m-0 block w-[100%] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary-600 focus:text-neutral-700 focus:shadow-te-primary dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200"
+              className="relative m-0 block w-[100%] min-w-0 bg-gray-50 flex-auto rounded border border-solid border-neutral-300 bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary-600 focus:text-neutral-700 focus:shadow-te-primary dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200"
               placeholder="Search"
               aria-label="Search"
               aria-describedby="button-addon2"

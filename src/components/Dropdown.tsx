@@ -5,9 +5,8 @@ interface DropDownnType {
   callback: () => void;
 }
 const DropDown: FC<DropDownnType> = (props) => {
-  const { title, placeHolder, callback } = props;
+  const { title } = props;
   const [isDropDowned, setIsDropDowned] = useState<boolean>(false);
-  const title1 = "View Filters For";
   const handleDropDown = () => {
     setIsDropDowned(!isDropDowned);
   };
