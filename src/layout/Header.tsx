@@ -1,4 +1,5 @@
 import React from "react";
+import NavBarButton from "../components/NavBarButton";
 
 function Header() {
   return (
@@ -10,21 +11,21 @@ function Header() {
           </div>
           <div className="hidden md:block w-[800px]">
             <div className="flex flex-wrap justify-start w-full">
-              <div className="flex items-center justify-center w-[126px] h-[38px] text-[14px] not-italic font-bold bg-[#F3F4F6] hover:bg-[#5F2EE5] text-[#89888E] hover:text-white rounded-[4px] cursor-pointer">
+              <NavBarButton>
                 Candidates
-              </div>
-              <div className="flex items-center justify-center w-[126px] h-[38px] text-[14px] not-italic font-bold bg-[#F3F4F6] hover:bg-[#5F2EE5] text-[#89888E] hover:text-white rounded-[4px] cursor-pointer">
+              </NavBarButton>
+              <NavBarButton>
                 Project
-              </div>
-              <div className="flex items-center justify-center w-[126px] h-[38px] text-[14px] not-italic font-bold bg-[#F3F4F6] hover:bg-[#5F2EE5] text-[#89888E] hover:text-white rounded-[4px] cursor-pointer">
+              </NavBarButton>
+              <NavBarButton>
                 Lists
-              </div>
-              <div className="flex items-center justify-center w-[126px] h-[38px] text-[14px] not-italic font-bold bg-[#F3F4F6] hover:bg-[#5F2EE5] text-[#89888E] hover:text-white rounded-[4px] cursor-pointer">
+              </NavBarButton>
+              <NavBarButton>
                 Integretions
-              </div>
-              <div className="flex items-center justify-center w-[126px] h-[38px] text-[14px] not-italic font-bold bg-[#F3F4F6] hover:bg-[#5F2EE5] text-[#89888E] hover:text-white rounded-[4px] cursor-pointer">
+              </NavBarButton>
+              <NavBarButton>
                 Company
-              </div>
+              </NavBarButton>
             </div>
           </div>
         </div>
@@ -42,14 +43,14 @@ function Header() {
               className="w-[28px] md:w-[36px] border-[1px] border-solid border-[#EDEDED] rounded-[50%]"
             />
             <div className="hidden md:block w-[88px] h-[30px]">
-                <div className="text-[12px] font-bold">Esther Howard</div>
-                <div className="text-[10px]">easter@gmail.com</div>
+              <div className="text-[12px] font-bold">Esther Howard</div>
+              <div className="text-[10px]">easter@gmail.com</div>
             </div>
             <img
-                src="assets/imgs/Vector.png"
-                alt="dropdown"
-                className="w-[14px] ml-1"
-                />
+              src="assets/imgs/Vector.png"
+              alt="dropdown"
+              className="w-[14px] ml-1"
+            />
           </div>
         </div>
       </div>
@@ -57,21 +58,21 @@ function Header() {
       <div className="block md:hidden">
         <div className="flex justify-start">
           <div className="flex flex-wrap justify-center w-full">
-            <div className="flex items-center justify-center w-[126px] h-[38px] text-[14px] not-italic font-bold bg-[#F3F4F6] hover:bg-[#5F2EE5] text-[#89888E] hover:text-white rounded-[4px] cursor-pointer">
-              Candidates
-            </div>
-            <div className="flex items-center justify-center w-[126px] h-[38px] text-[14px] not-italic font-bold bg-[#F3F4F6] hover:bg-[#5F2EE5] text-[#89888E] hover:text-white rounded-[4px] cursor-pointer">
-              Project
-            </div>
-            <div className="flex items-center justify-center w-[126px] h-[38px] text-[14px] not-italic font-bold bg-[#F3F4F6] hover:bg-[#5F2EE5] text-[#89888E] hover:text-white rounded-[4px] cursor-pointer">
-              Lists
-            </div>
-            <div className="flex items-center justify-center w-[126px] h-[38px] text-[14px] not-italic font-bold bg-[#F3F4F6] hover:bg-[#5F2EE5] text-[#89888E] hover:text-white rounded-[4px] cursor-pointer">
-              Integretions
-            </div>
-            <div className="flex items-center justify-center w-[126px] h-[38px] text-[14px] not-italic font-bold bg-[#F3F4F6] hover:bg-[#5F2EE5] text-[#89888E] hover:text-white rounded-[4px] cursor-pointer">
-              Company
-            </div>
+          <NavBarButton>
+                Candidates
+              </NavBarButton>
+              <NavBarButton>
+                Project
+              </NavBarButton>
+              <NavBarButton>
+                Lists
+              </NavBarButton>
+              <NavBarButton>
+                Integretions
+              </NavBarButton>
+              <NavBarButton>
+                Company
+              </NavBarButton>
           </div>
         </div>
       </div>
